@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Durmas</string>
+    <string name="FaceBookLogin">Login with Facebook</string>
+    <string name="GmailLogin">Login with Gmail</string>
+    <string name="backButton">Back</string>
+    <string name="Games">Games</string>
+    <string name="rentCar">Rent a Car</string>
+    <string name="weather">Weather</string>
+    <string name="Hotels">Hotels</string>
+    <string name="Resturants">Restaurants</string>
+    <string name="BuyandSell">buy and Sell</string>
+</resources>
