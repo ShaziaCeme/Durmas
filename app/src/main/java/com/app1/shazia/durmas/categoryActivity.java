@@ -3,6 +3,7 @@ package com.app1.shazia.durmas;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -20,8 +21,9 @@ public class categoryActivity extends AppCompatActivity {
         facebookButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent categoryIntent = new Intent(categoryActivity.this,CategorySelection.class );
-                startActivity( categoryIntent );
+                Intent loginIntent = new Intent(categoryActivity.this,CategorySelection.class );
+                Log.d("Durmas","Login Intent started");
+                startActivity( loginIntent );
 
             }
         } );

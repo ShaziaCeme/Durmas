@@ -1,77 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="2"
-    tools:background="#6dcff6">
+    android:background="#6dcff6">
 
-    <TableRow
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView7"
+
         android:layout_width="wrap_content"
-        android:layout_height="190dp">
+        android:layout_height="wrap_content"
 
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="wrap_content"
-            android:layout_column="1"
-            android:layout_marginLeft="35dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="40dp"
-            android:padding="3dip"
-            android:src="@drawable/games" />
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/circleImageView9"
+        android:layout_alignLeft="@id/circleImageView9"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/games" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="wrap_content"
-            android:layout_column="2"
-            android:layout_marginBottom="40dp"
-
-            android:layout_marginTop="40dp"
-            android:gravity="end"
-            android:padding="3dip"
-            android:src="@drawable/cars"
-
-            />
-
-    </TableRow>
-
-    <TableRow>
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_column="1"
-            android:padding="3dip"
-            android:layout_marginStart="35dp"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginBottom="35dp"
-            android:src="@drawable/wether" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_column="2"
-            android:gravity="end"
-            android:layout_width="wrap_content"
-            android:padding="3dip"
-            android:src="@drawable/hotels" />
-    </TableRow>
-
-    <TableRow>
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_column="1"
-            android:padding="3dip"
-            android:layout_marginLeft="35dp"
-            android:layout_marginStart="35dp"
-            android:layout_width="wrap_content"
-            android:src="@drawable/rest" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_column="2"
-            android:gravity="end"
-            android:padding="3dip"
-            android:layout_width="wrap_content"
-            android:layout_marginBottom="35dp"
-            android:src="@drawable/buysell" />
-
-    </TableRow>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView8"
 
 
-</TableLayout>
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/circleImageView7"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/cars" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView10"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/circleImageView8"
+        android:layout_alignLeft="@id/circleImageView8"
+        android:layout_centerVertical="true"
+        android:padding="3dip"
+        android:src="@drawable/hotels" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/circleImageView11"
+        android:layout_alignLeft="@id/circleImageView11"
+        android:layout_centerVertical="true"
+        android:padding="3dip"
+        android:src="@drawable/wether" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="47dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:padding="3dip"
+        android:src="@drawable/rest" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/circleImageView8"
+        android:layout_alignLeft="@id/circleImageView8"
+
+        android:layout_alignTop="@+id/circleImageView11"
+        android:padding="3dip"
+        android:src="@drawable/buysell" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+        android:text="@string/backButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="189dp"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:text="@string/Games"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignRight="@id/textView6"
+
+        android:layout_alignTop="@+id/textView"
+        android:text="@string/rentCar"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_toRightOf="@id/button3"
+        android:text="@string/weather"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="183dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:text="@string/Hotels"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/circleImageView7"
+        android:layout_alignLeft="@id/circleImageView7"
+        android:layout_alignTop="@+id/textView6"
+        android:text="@string/Resturants"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignStart="@+id/circleImageView8"
+        android:layout_alignLeft="@id/circleImageView8"
+        android:layout_marginBottom="15dp"
+        android:text="@string/BuyandSell"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
