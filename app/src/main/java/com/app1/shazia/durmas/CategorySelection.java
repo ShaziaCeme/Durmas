@@ -14,9 +14,11 @@ public class CategorySelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        backButton = (Button)findViewById( R.id.button3 ) ;
+
 
         setContentView( R.layout.activity_category_selection );
+
+        backButton = (Button)findViewById( R.id.button3 ) ;
 
         backButton.setOnClickListener( new View.OnClickListener() {
             @Override

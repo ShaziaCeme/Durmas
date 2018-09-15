@@ -9,4 +9,10 @@
     <string name="Hotels">Hotels</string>
     <string name="Resturants">Restaurants</string>
     <string name="BuyandSell">buy and Sell</string>
+
+
+    <string name="facebook_app_id">305426016710705</string>
+    <string name="fb_login_protocol_scheme">fb1751146948334408</string>
+
+
 </resources>
