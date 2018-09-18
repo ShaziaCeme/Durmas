@@ -2,7 +2,7 @@
     <string name="app_name">Durmas</string>
     <string name="FaceBookLogin">Login with Facebook</string>
     <string name="GmailLogin">Login with Gmail</string>
-    <string name="backButton">Back</string>
+    <string name="Back">Back</string>
     <string name="Games">Games</string>
     <string name="rentCar">Rent a Car</string>
     <string name="weather">Weather</string>
@@ -13,6 +13,7 @@
 
     <string name="facebook_app_id">305426016710705</string>
     <string name="fb_login_protocol_scheme">fb1751146948334408</string>
+    <string name="title">Durmas</string>
 
 
 </resources>
